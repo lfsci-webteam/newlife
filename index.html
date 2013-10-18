@@ -1,0 +1,366 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Need a New Life?</title>
+<link href="theme_style.css" rel="stylesheet" type="text/css"/>
+<link href="structure_style.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>New Life</h1>
+	</div>
+	<div data-role="content">	
+		<p>
+        Ever thought of moving to France? Singapore? Venezuela? That would probably be a whole new life...<br />
+        <br />
+        <b>Need a New Life?</b> will help you take difficult life decisions such as changing your name, trying out a new profession or buying your ideal pet. Just choose below the question which intrigues you the most...
+        </p>	
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">Need a new name?</a></li>
+            <li><a href="#page3">Need a new job?</a></li>
+			<li><a href="#page4">Need a new pet?</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Good luck!</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>New Name</h1>
+	</div>
+	<div data-role="content">	
+        <form id="fnewname">
+            <div align="center">
+            <input id="fnewname_name" type="text" name="name" value="" placeholder="Your Name" />
+            <select id="fnewname_gender" name="gender">
+                <option value="">Choose your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select> 
+            <select id="fnewname_language" name="language">
+                <option value="">Where do you want to use the name?</option>
+                <option value="europe">Backpacking through Europe</option>
+                <option value="latinam">Escaping to Latin America</option>
+                <option value="asian">Setting a Call-Center in Asia</option>
+            </select>
+            </div>
+		</form>
+                <br />
+            <div align="center"><input type="button" name="submit" method="get" value="Give me a New Name!" onclick="newName()" /></div>		
+	</div>
+
+    <script type="text/javascript"> 
+
+	var europeMaleNames = [ 'Hans', 'Ivan', 'Jean-Pierre', 'Wolfgang', 'Darcy', 'Sandro', 'Luc', 'Joerg' ];
+	var europeFemaleNames = [ 'Annika', 'Gerlinde', 'Louisette', 'Sabine', 'Melina', 'Simone', 'Korinna', 'Anne Marie' ];	
+
+	var latinamMaleNames = [ 'Antonio', 'Eduardo', 'Pedro', 'Juan', 'Ricardo', 'Leopoldo', 'Julio', 'Lucas' ];
+	var latinamFemaleNames = [ 'Lupita', 'Maria', 'Catalina', 'Juana', 'Tati', 'Liliana', 'Carmina', 'Yolanda' ];	
+
+	var asianMaleNames = [ 'Yuki', 'Ji Hoo', 'Pichaya', 'Toshiro', 'Min-Soo', 'Bao', 'Ping', 'Mamraj' ];
+	var asianFemaleNames = [ 'Sumire', 'Han-Ah', 'Wannapah', 'Aiko', 'Hyunh', 'Dao Ming', 'Kashmira', 'Trang' ];
+						
+	function newName(){
+
+		var old_name = document.getElementById('fnewname_name').value;
+		document.getElementById('old_name').innerHTML = old_name;
+			
+		var newLanguage = document.getElementById('fnewname_language').value;
+			
+		var newName = document.getElementById('fnewname_gender').value;	
+		
+		var randomnumber=Math.floor(Math.random()*4);
+	
+		if(newLanguage == 'europe'){
+			if(newName == 'male'){
+			document.getElementById('new_name').innerHTML = (europeMaleNames[randomnumber]);
+			}
+			else{	
+			document.getElementById('new_name').innerHTML = (europeFemaleNames[randomnumber]);	
+				}	
+			}
+			
+		if(newLanguage == 'latinam'){
+			if(newName == 'male'){
+				document.getElementById('new_name').innerHTML = (latinamMaleNames[randomnumber]);
+				}
+				else{	
+				document.getElementById('new_name').innerHTML = (latinamFemaleNames[randomnumber]);	
+					}	
+			}
+			
+		if(newLanguage == 'asian'){
+			if(newName == 'male'){
+				document.getElementById('new_name').innerHTML = (asianMaleNames[randomnumber]);
+				}
+				else{	
+				document.getElementById('new_name').innerHTML = (asianFemaleNames[randomnumber]);	
+					}	
+			}
+		
+		var results = document.getElementById('newname_a');
+		
+		results.style.display == "none" ? results.style.display = "block" : 
+		results.style.display = "none"; 
+		}
+	
+	function anotherChance(){
+		
+		var results = document.getElementById('newname_a');
+		
+		results.style.display == "block" ? results.style.display = "none" : 
+		results.style.display = "block"; 
+			
+		document.getElementById('fnewname').reset();
+			}
+
+	</script>  
+
+	<br /><br />
+
+	<div id="newname_a" style="display:none;">
+
+	No worries, <b id="old_name">?</b>, have fun in your adventure with you new name <b id="new_name">?</b>!
+    
+    <br />
+    <br />
+    
+     <div align="center"><input type="reset" name="reset" value="I want another..." onclick="anotherChance()" /></div>
+    
+	</div>
+
+	<div data-role="footer">
+		<h4><a href="#page">Go Back</a></h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>New Job</h1>
+	</div>
+	<div data-role="content">	
+        <form id="fnewjob">
+                <div align="center">
+                <input id="fnewjob_name" type="text" name="name" value="" placeholder="Your Name" />
+                <select id="fnewjob_money" name="money">
+                    <option value="">Worried about money?</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select> 
+                <select id="fnewjob_lifestyle" name="lifestyle">
+                    <option value="">What kind of lifestyle?</option>
+                    <option value="city">City Kid</option>
+                    <option value="boho">Feng Shui</option>
+                    <option value="rural">Nature Friend</option>
+                </select>
+                </div>
+            </form>
+                    <br />
+                <div align="center"><input type="button" name="jobsubmit" method="get" value="Give me a New Job!" onclick="newJob()" /></div>		
+        </div>
+    
+        <script type="text/javascript"> 
+    
+        var cityMoney = [ 'Runway Model in Paris', 'Dogs Fashion Designer in London', 'Gastronomic Cuisine Critic in Seoul', 'Peacesign Photographer in Beijing', 'Attraction Park Owner in Orlando' ];
+        var cityNoMoney = [ 'Backstreet Musician in NY', 'Free Hugs Giver in San Francisco', 'Starbucks Server in Chicago', 'Taco Stand Owner in Mexico City', 'Living Statue in Rio de Janeiro' ];	
+    
+        var bohoMoney = [ 'Broadway Producer', 'Yoga Instructor in LA', 'Cannes Venue Owner', 'Bollywood Choreographer', 'Landscapes Painter in Quebec' ];
+        var bohoNoMoney = [ 'Vegan Activist in Vienna', 'Backpacker through India', 'Streets Mandolin Player', 'Stunts Actor in Hong Kong', 'Cartoon Painter in Johannesburg' ];	
+    
+        var ruralMoney = [ 'North Pole Tour Guide', 'Ostrich Farm Manager in Sahara', 'Dog Education School Director Scotland', 'Secret Horse Races Manager in Bahamas', 'Resort Owner in Menorca' ];
+        var ruralNoMoney = [ 'Rainforest Defender in the Amazonas', 'Green Peace Guardian in the Pacific', 'Abandoned Animals Protector Alaska', 'Guardian of the Forest', 'Surfshop Owner in South East Asia' ];
+                            
+        function newJob(){
+    
+            var fnewjob_name = document.getElementById('fnewjob_name').value;
+            document.getElementById('old_namej').innerHTML = fnewjob_name;
+                
+            var newLifestyle = document.getElementById('fnewjob_lifestyle').value;
+                
+            var money = document.getElementById('fnewjob_money').value;	
+            
+            var randomnumber=Math.floor(Math.random()*4);
+        
+            if(newLifestyle == 'city'){
+                if(money == 'yes'){
+                document.getElementById('new_job').innerHTML = (cityMoney[randomnumber]);
+                }
+                else{	
+                document.getElementById('new_job').innerHTML = (cityNoMoney[randomnumber]);	
+                    }	
+                }
+                
+            if(newLifestyle == 'boho'){
+                if(money == 'yes'){
+                    document.getElementById('new_job').innerHTML = (bohoMoney[randomnumber]);
+                    }
+                    else{	
+                    document.getElementById('new_job').innerHTML = (bohoNoMoney[randomnumber]);	
+                        }	
+                }
+                
+            if(newLifestyle == 'rural'){
+                if(money == 'yes'){
+                    document.getElementById('new_job').innerHTML = (ruralMoney[randomnumber]);
+                    }
+                    else{	
+                    document.getElementById('new_job').innerHTML = (ruralNoMoney[randomnumber]);	
+                        }	
+                }
+            
+            var results = document.getElementById('newjob_a');
+            
+            results.style.display == "none" ? results.style.display = "block" : 
+            results.style.display = "none"; 
+            }
+        
+        function anotherJobChance(){
+                
+            document.getElementById('fnewjob').reset();
+            
+            var results = document.getElementById('newjob_a');
+            
+            results.style.display == "block" ? results.style.display = "none" : 
+            results.style.display = "none"; 
+                }
+    
+        </script>  
+    
+        <br /><br />
+    
+        <div id="newjob_a" style="display:none;">
+    
+        No problem, <b id="old_namej">?</b>, you should considered working as a <b id="new_job">?</b> - I think it fits you!
+        
+        <br />
+        <br />
+        
+         <div align="center"><input type="reset" name="reset" value="I want another..." onclick="anotherJobChance();" /></div>
+        
+        </div>
+	<div data-role="footer">
+		<h4><a href="#page">Go Back</a></h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>New Pet</h1>
+	</div>
+	<div data-role="content">	
+        <form id="fnewpet">
+                <div align="center">
+                <input id="fnewpet_name" type="text" name="name" value="" placeholder="Your Name" />
+                <select id="fnewpet_extravagance" name="extravagance">
+                    <option value="">Kind of Pet?</option>
+                    <option value="exotic">Exotic</option>
+                    <option value="typical">Typical</option>
+                </select> 
+                <select id="fnewpet_house" name="house">
+                    <option value="">How is your house?</option>
+                    <option value="small">Small Place, No Open Air</option>
+                    <option value="normal">Normalsized, with Balcony or Terrace</option>
+                    <option value="big">Big House, with Back/Frontyard</option>
+                </select>
+                </div>
+            </form>
+                    <br />
+                <div align="center"><input type="button" name="petsubmit" method="get" value="Choose me a New Pet!" onclick="newPet()" /></div>		
+        </div>
+    
+        <script type="text/javascript"> 
+    
+        var smallExotic = [ 'Cute, Little Hedgehog', 'African Meerkat', 'Japanese Koi Fish', 'Polinesian Turtle', 'Rainforest Toad' ];
+        var smallTypical = [ 'Yellow Duck', 'Squirrel', 'L.A. Chihuahua', 'Singing Canary bird', 'Cute, Fluffy Bunny' ];	
+    
+        var normalExotic = [ 'Koala from Australia', 'Whiteface Monkey', 'Big Iguana', 'Rattlesnake', 'Dancing South Pole Pinguin' ];
+        var normalTypical = [ 'Loyal Labrador dog', 'Spoiled Persian Cat', 'Grumpy Cat', 'Speaking Parrot', 'talking dog like Dug' ];	
+    
+        var bigExotic = [ 'Boxer Kangaroo', 'Big Alligator', 'BYU Cougar', 'Big, Huggable Bear', 'Llama with Attitude' ];
+        var bigTypical = [ 'Messy Chow Chow', 'Big, Black Horse', 'Speaking Donkey', 'Milka Cow', 'Goat (because they are awesome!!)' ];
+                            
+        function newPet(){
+    
+            var fnewpet_name = document.getElementById('fnewpet_name').value;
+            document.getElementById('old_namep').innerHTML = fnewpet_name;
+                
+            var newHouse = document.getElementById('fnewpet_house').value;
+                
+            var extravagance = document.getElementById('fnewpet_extravagance').value;	
+            
+            var randomnumber=Math.floor(Math.random()*4);
+        
+            if(newHouse == 'small'){
+                if(extravagance == 'exotic'){
+                document.getElementById('new_pet').innerHTML = (smallExotic[randomnumber]);
+                }
+                else{	
+                document.getElementById('new_pet').innerHTML = (smallTypical[randomnumber]);	
+                    }	
+                }
+                
+            if(newHouse == 'normal'){
+                if(extravagance == 'exotic'){
+                    document.getElementById('new_pet').innerHTML = (normalExotic[randomnumber]);
+                    }
+                    else{	
+                    document.getElementById('new_pet').innerHTML = (normalTypical[randomnumber]);	
+                        }	
+                }
+                
+            if(newHouse == 'big'){
+                if(extravagance == 'exotic'){
+                    document.getElementById('new_pet').innerHTML = (bigExotic[randomnumber]);
+                    }
+                    else{	
+                    document.getElementById('new_pet').innerHTML = (bigTypical[randomnumber]);	
+                        }	
+                }
+            
+            var results = document.getElementById('newpet_a');
+            
+            results.style.display == "none" ? results.style.display = "block" : 
+            results.style.display = "block"; 
+            }
+        
+        function anotherPetChance(){
+                
+            document.getElementById('fnewpet').reset();
+            
+            var results = document.getElementById('newpet_a');
+            
+            results.style.display == "block" ? results.style.display = "none" : 
+            results.style.display = "none"; 
+                }
+    
+        </script>  
+    
+        <br /><br />
+    
+        <div id="newpet_a" style="display:none;">
+    
+        <b id="old_namep">?</b>, seems like you should get yourself a <b id="new_pet">?</b> - ever had one of those?
+        
+        <br />
+        <br />
+        
+         <div align="center"><input type="reset" name="reset" value="I want another one..." onclick="anotherPetChance();" /></div>
+         
+         </div>
+         
+   	<div data-role="footer">
+		<h4><a href="#page">Go Back</a></h4>
+	</div>
+</div>
+
+</body>
+</html>
