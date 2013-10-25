@@ -28,19 +28,19 @@
 			<li><a href="#page4">Need a new pet?</a></li>
 		</ul>		
 	</div>
-	<div data-role="footer">
-		<h4>Good luck!</h4>
-	</div>
 </div>
 
 <div data-role="page" id="page2">
 	<div data-role="header">
 		<h1>New Name</h1>
 	</div>
+    
 	<div data-role="content">	
+        <div id="oldname_a" style="display:block;" align="center">
+        We won't question your reasons. If you need a new name, go for it.<br />
+        <br />
         <form id="fnewname">
-            <div align="center">
-            <input id="fnewname_name" type="text" name="name" value="" placeholder="Your Name" />
+            <input id="fnewname_name" type="text" name="name" value="" placeholder="Current Name" />
             <select id="fnewname_gender" name="gender">
                 <option value="">Choose your Gender</option>
                 <option value="male">Male</option>
@@ -52,10 +52,10 @@
                 <option value="latinam">Escaping to Latin America</option>
                 <option value="asian">Setting a Call-Center in Asia</option>
             </select>
-            </div>
 		</form>
                 <br />
-            <div align="center"><input type="button" name="submit" method="get" value="Give me a New Name!" onclick="newName()" /></div>		
+        <input type="button" name="submit" method="get" value="Give me a New Name!" onclick="newName()" />
+        </div>	
 	</div>
 
     <script type="text/javascript"> 
@@ -111,6 +111,12 @@
 		
 		results.style.display == "none" ? results.style.display = "block" : 
 		results.style.display = "none"; 
+		
+		var results = document.getElementById('oldname_a');
+		
+		results.style.display == "block" ? results.style.display = "none" : 
+		results.style.display = "none"; 
+		
 		}
 	
 	function anotherChance(){
@@ -119,22 +125,25 @@
 		
 		results.style.display == "block" ? results.style.display = "none" : 
 		results.style.display = "block"; 
+		
+		var results = document.getElementById('oldname_a');
+		
+		results.style.display == "none" ? results.style.display = "block" : 
+		results.style.display = "block"; 
 			
 		document.getElementById('fnewname').reset();
 			}
 
 	</script>  
 
-	<br /><br />
-
-	<div id="newname_a" style="display:none;">
+	<div id="newname_a" style="display:none;" align="center">
 
 	No worries, <b id="old_name">?</b>, have fun in your adventure with you new name <b id="new_name">?</b>!
     
     <br />
     <br />
     
-     <div align="center"><input type="reset" name="reset" value="I want another..." onclick="anotherChance()" /></div>
+     <input type="reset" name="reset" value="I want another..." onclick="anotherChance()" />
     
 	</div>
 
@@ -147,10 +156,12 @@
 	<div data-role="header">
 		<h1>New Job</h1>
 	</div>
-	<div data-role="content">	
+    
+	<div data-role="content">
+        <div id="oldjob_a" style="display:block;" align="center">  
+        Are you tired of your current job? You need a change in pace!!<br />
+        <br />  	
         <form id="fnewjob">
-                <div align="center">
-                <input id="fnewjob_name" type="text" name="name" value="" placeholder="Your Name" />
                 <select id="fnewjob_money" name="money">
                     <option value="">Worried about money?</option>
                     <option value="yes">Yes</option>
@@ -162,10 +173,10 @@
                     <option value="boho">Feng Shui</option>
                     <option value="rural">Nature Friend</option>
                 </select>
-                </div>
             </form>
                     <br />
-                <div align="center"><input type="button" name="jobsubmit" method="get" value="Give me a New Job!" onclick="newJob()" /></div>		
+                <input type="button" name="jobsubmit" method="get" value="Give me a New Job!" onclick="newJob()" />
+                </div>		
         </div>
     
         <script type="text/javascript"> 
@@ -180,10 +191,7 @@
         var ruralNoMoney = [ 'Rainforest Defender in the Amazonas', 'Green Peace Guardian in the Pacific', 'Abandoned Animals Protector Alaska', 'Guardian of the Forest', 'Surfshop Owner in South East Asia' ];
                             
         function newJob(){
-    
-            var fnewjob_name = document.getElementById('fnewjob_name').value;
-            document.getElementById('old_namej').innerHTML = fnewjob_name;
-                
+                    
             var newLifestyle = document.getElementById('fnewjob_lifestyle').value;
                 
             var money = document.getElementById('fnewjob_money').value;	
@@ -221,6 +229,11 @@
             
             results.style.display == "none" ? results.style.display = "block" : 
             results.style.display = "none"; 
+		
+			var results = document.getElementById('oldjob_a');
+			
+			results.style.display == "block" ? results.style.display = "none" : 
+			results.style.display = "none"; 
             }
         
         function anotherJobChance(){
@@ -231,20 +244,23 @@
             
             results.style.display == "block" ? results.style.display = "none" : 
             results.style.display = "none"; 
+		
+			var results = document.getElementById('oldjob_a');
+			
+			results.style.display == "none" ? results.style.display = "block" : 
+			results.style.display = "block"; 
                 }
     
         </script>  
     
-        <br /><br />
+        <div id="newjob_a" style="display:none;" align="center">
     
-        <div id="newjob_a" style="display:none;">
-    
-        No problem, <b id="old_namej">?</b>, you should considered working as a <b id="new_job">?</b> - I think it fits you!
+        You should considered working as a <b id="new_job">?</b> - I think it fits you!
         
         <br />
         <br />
         
-         <div align="center"><input type="reset" name="reset" value="I want another..." onclick="anotherJobChance();" /></div>
+         <input type="reset" name="reset" value="I want another..." onclick="anotherJobChance();" />
         
         </div>
 	<div data-role="footer">
@@ -256,10 +272,10 @@
 	<div data-role="header">
 		<h1>New Pet</h1>
 	</div>
-	<div data-role="content">	
+    
+	<div data-role="content">
+        <div id="oldpet_a" style="display:block;" align="center">	
         <form id="fnewpet">
-                <div align="center">
-                <input id="fnewpet_name" type="text" name="name" value="" placeholder="Your Name" />
                 <select id="fnewpet_extravagance" name="extravagance">
                     <option value="">Kind of Pet?</option>
                     <option value="exotic">Exotic</option>
@@ -271,10 +287,10 @@
                     <option value="normal">Normalsized, with Balcony or Terrace</option>
                     <option value="big">Big House, with Back/Frontyard</option>
                 </select>
-                </div>
             </form>
                     <br />
-                <div align="center"><input type="button" name="petsubmit" method="get" value="Choose me a New Pet!" onclick="newPet()" /></div>		
+                <input type="button" name="petsubmit" method="get" value="Choose me a New Pet!" onclick="newPet()" />
+              </div>		
         </div>
     
         <script type="text/javascript"> 
@@ -289,10 +305,7 @@
         var bigTypical = [ 'Messy Chow Chow', 'Big, Black Horse', 'Speaking Donkey', 'Milka Cow', 'Goat (because they are awesome!!)' ];
                             
         function newPet(){
-    
-            var fnewpet_name = document.getElementById('fnewpet_name').value;
-            document.getElementById('old_namep').innerHTML = fnewpet_name;
-                
+                    
             var newHouse = document.getElementById('fnewpet_house').value;
                 
             var extravagance = document.getElementById('fnewpet_extravagance').value;	
@@ -330,6 +343,12 @@
             
             results.style.display == "none" ? results.style.display = "block" : 
             results.style.display = "block"; 
+		
+			var results = document.getElementById('oldpet_a');
+			
+			results.style.display == "block" ? results.style.display = "none" : 
+			results.style.display = "none"; 
+			
             }
         
         function anotherPetChance(){
@@ -340,20 +359,24 @@
             
             results.style.display == "block" ? results.style.display = "none" : 
             results.style.display = "none"; 
+		
+			var results = document.getElementById('oldpet_a');
+			
+			results.style.display == "none" ? results.style.display = "block" : 
+			results.style.display = "block"; 
+			
                 }
     
         </script>  
+        
+        <div id="newpet_a" style="display:none;" align="center">
     
-        <br /><br />
-    
-        <div id="newpet_a" style="display:none;">
-    
-        <b id="old_namep">?</b>, seems like you should get yourself a <b id="new_pet">?</b> - ever had one of those?
+        Seems like you should get yourself a <b id="new_pet">?</b> - ever had one of those?
         
         <br />
         <br />
         
-         <div align="center"><input type="reset" name="reset" value="I want another one..." onclick="anotherPetChance();" /></div>
+         <input type="reset" name="reset" value="I want another one..." onclick="anotherPetChance();" />
          
          </div>
          
