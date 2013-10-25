@@ -3,7 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.neednewlife"
+        id        = "com.phonegap.newlife"
         version   = "1.0.0">
 
     <name>Need a New Life?</name>
@@ -12,7 +12,7 @@
         Ever though of moving to France? Haiti? The Phillipines? That would probably be a whole new life... "Need a New Life?" will help you imagining how it could be if you decide to change your country, profession, favourite food or ideal pet!
     </description>
 
-    <author href="http://helloworld.com" email="sara@daily-lovejuice.net">
+    <author href="http://daily-lovejuice.net" email="sara@daily-lovejuice.net">
         Sara Obando
     </author>
 
