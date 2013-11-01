@@ -1,15 +1,17 @@
+
+
 	.ui-bar-a{
 	border:1px solid #2a2a2a;
-	background:#111;
+	background:#4F6661;
 	color:#fff;
 	font-weight:bold;
 	text-shadow:0 -1px 1px #000;
-	background-image:-webkit-gradient(linear,left top,left bottom,from(#3c3c3c),to(#111));
-	background-image:-webkit-linear-gradient(#3c3c3c,#111);
-	background-image:-moz-linear-gradient(#3c3c3c,#111);
-	background-image:-ms-linear-gradient(#3c3c3c,#111);
-	background-image:-o-linear-gradient(#3c3c3c,#111);
-	background-image:linear-gradient(#3c3c3c,#111)
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#A9BAB7),to(#4F6661));
+	background-image:-webkit-linear-gradient(#A9BAB7,#4F6661);
+	background-image:-moz-linear-gradient(#A9BAB7,#4F6661);
+	background-image:-ms-linear-gradient(#A9BAB7,#4F6661);
+	background-image:-o-linear-gradient(#A9BAB7,#4F6661);
+	background-image:linear-gradient(#A9BAB7,#4F6661)
 	}
 
 	.ui-bar-a,.ui-bar-a input,.ui-bar-a select,.ui-bar-a textarea,.ui-bar-a button{
@@ -17,24 +19,24 @@
 	}
 
 	.ui-bar-a .ui-link-inherit{
-	color:#fff
+	color:#fff;
 	}
 
 	.ui-bar-a .ui-link{
-	color:#7cc4e7;
+	color:#fff;
 	font-weight:bold
 	}
 	
 	.ui-bar-a .ui-link:hover{
-	color:#2489ce
+	color:#fff;
 	}
 	
 	.ui-bar-a .ui-link:active{
-	color:#2489ce
+	color:#fff;
 	}
 	
 	.ui-bar-a .ui-link:visited{
-	color:#2489ce
+	color:#fff;
 	}
 	
 	.ui-body-a,.ui-dialog.ui-overlay-a{
@@ -43,12 +45,12 @@
 	color:#fff;
 	text-shadow:0 1px 0 #000;
 	font-weight:normal;
-	background-image:-webkit-gradient(linear,left top,left bottom,from(#666),to(#222));
-	background-image:-webkit-linear-gradient(#666,#222);
-	background-image:-moz-linear-gradient(#666,#222);
-	background-image:-ms-linear-gradient(#666,#222);
-	background-image:-o-linear-gradient(#666,#222);
-	background-image:linear-gradient(#666,#222)
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#D4C1C4),to(#968488));
+	background-image:-webkit-linear-gradient(#D4C1C4,#968488);
+	background-image:-moz-linear-gradient(#D4C1C4,#968488);
+	background-image:-ms-linear-gradient(#D4C1C4,#968488);
+	background-image:-o-linear-gradient(#D4C1C4,#968488);
+	background-image:linear-gradient(#D4C1C4,#968488)
 	}
 	
 	.ui-body-a,.ui-body-a input,.ui-body-a select,.ui-body-a textarea,.ui-body-a button{
@@ -60,20 +62,20 @@
 	}
 	
 	.ui-body-a .ui-link{
-	color:#2489ce;
+	color:#fff;
 	font-weight:bold
 	}
 	
 	.ui-body-a .ui-link:hover{
-	color:#2489ce
+	color:#fff;
 	}
 	
 	.ui-body-a .ui-link:active{
-	color:#2489ce
+	color:#fff;
 	}
 	
 	.ui-body-a .ui-link:visited{
-	color:#2489ce
+	color:#fff;
 	}
 
 	.ui-btn-up-a{
@@ -82,12 +84,12 @@
 	font-weight:bold;
 	color:#fff;
 	text-shadow:0 -1px 1px #000;
-	background-image:-webkit-gradient(linear,left top,left bottom,from(#555),to(#333));
-	background-image:-webkit-linear-gradient(#555,#333);
-	background-image:-moz-linear-gradient(#555,#333);
-	background-image:-ms-linear-gradient(#555,#333);
-	background-image:-o-linear-gradient(#555,#333);
-	background-image:linear-gradient(#555,#333)
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#D4C1C4),to(#333));
+	background-image:-webkit-linear-gradient(#D4C1C4,#333);
+	background-image:-moz-linear-gradient(#D4C1C4,#333);
+	background-image:-ms-linear-gradient(#D4C1C4,#333);
+	background-image:-o-linear-gradient(#D4C1C4,#333);
+	background-image:linear-gradient(#D4C1C4,#333)
 	}
 	
 	.ui-btn-up-a a.ui-link-inherit{
@@ -197,20 +199,20 @@
 	}
 	
 	.ui-body-b .ui-link{
-	color:#2489ce;
+	color:#fff;
 	font-weight:bold
 	}
 	
 	.ui-body-b .ui-link:hover{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-body-b .ui-link:active{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-body-b .ui-link:visited{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-btn-up-b{
@@ -246,7 +248,7 @@
 	}
 	
 	.ui-btn-hover-b a.ui-link-inherit{
-	color:#fff
+	color:#fff;
 	}
 	
 	.ui-btn-down-b{
@@ -264,7 +266,7 @@
 	}
 	
 	.ui-btn-down-b a.ui-link-inherit{
-	color:#fff
+	color:#fff;
 	}
 	
 	.ui-btn-up-b,.ui-btn-hover-b,.ui-btn-down-b{
@@ -296,15 +298,15 @@
 	}
 	
 	.ui-bar-c .ui-link:hover{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-bar-c .ui-link:active{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-bar-c .ui-link:visited{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-bar-c,.ui-bar-c input,.ui-bar-c select,.ui-bar-c textarea,.ui-bar-c button{
@@ -329,29 +331,29 @@
 	}
 	
 	.ui-body-c .ui-link-inherit{
-	color:#333
+	color:#fff;
 	}
 	
 	.ui-body-c .ui-link{
-	color:#2489ce;
+	color:#fff;
 	font-weight:bold
 	}
 	
 	.ui-body-c .ui-link:hover{
-	color:#2489ce
+	color:#fff;
 	}
 	
 	.ui-body-c .ui-link:active{
-	color:#2489ce
+	color:#fff;
 	}
 	
 	.ui-body-c .ui-link:visited{
-	color:#2489ce
+	color:#fff;
 	}
 	
 	.ui-btn-up-c{
 	border:1px solid #ccc;
-	background:#eee;
+	background:#4F6661;
 	font-weight:bold;
 	color:#444;
 	text-shadow:0 1px 1px #f6f6f6;
@@ -364,7 +366,7 @@
 	}
 	
 	.ui-btn-up-c a.ui-link-inherit{
-	color:#2f3e46
+	color:#2f3e46;
 	}
 	
 	.ui-btn-hover-c{
@@ -389,7 +391,7 @@
 	border:1px solid #808080;
 	background:#fdfdfd;
 	font-weight:bold;
-	color:#111;
+	color:#4F6661;
 	text-shadow:0 1px 1px #fff;
 	background-image:-webkit-gradient(linear,left top,left bottom,from(#eee),to(#fdfdfd));
 	background-image:-webkit-linear-gradient(#eee,#fdfdfd);
@@ -400,12 +402,17 @@
 	}
 	
 	.ui-btn-down-c a.ui-link-inherit{
-	color:#2f3e46
+	color:#2f3e46;
+	}
+	
+	.ui-btn-up-c{
+	font-family:Helvetica,Arial,sans-serif;
+	text-decoration:none;
 	}
 	
 	.ui-btn-up-c,.ui-btn-hover-c,.ui-btn-down-c{
 	font-family:Helvetica,Arial,sans-serif;
-	text-decoration:none
+	text-decoration:none;
 	}
 	
 	.ui-bar-d{
@@ -430,20 +437,20 @@
 	}
 	
 	.ui-bar-d .ui-link{
-	color:#2489ce;
+	color:#fff;
 	font-weight:bold
 	}
 	
 	.ui-bar-d .ui-link:hover{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-bar-d .ui-link:active{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-bar-d .ui-link:visited{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-body-d,.ui-dialog.ui-overlay-d{
@@ -468,20 +475,20 @@
 	}
 	
 	.ui-body-d .ui-link{
-	color:#2489ce;
+	color:#fff;
 	font-weight:bold
 	}
 	
 	.ui-body-d .ui-link:hover{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-body-d .ui-link:active{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-body-d .ui-link:visited{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-btn-up-d{
@@ -503,7 +510,7 @@
 	}
 	
 	.ui-btn-hover-d{
-	border:1px solid #aaa;
+	border:1px solid #B3C7C2;
 	background:#eee;
 	font-weight:bold;
 	color:#222;
@@ -522,10 +529,10 @@
 	}
 	
 	.ui-btn-down-d{
-	border:1px solid #aaa;
+	border:1px solid #B3C7C2;
 	background:#fff;
 	font-weight:bold;
-	color:#111;
+	color:#4F6661;
 	text-shadow:0 1px 1px #fff;
 	background-image:-webkit-gradient(linear,left top,left bottom,from(#eee),to(#fff));
 	background-image:-webkit-linear-gradient(#eee,#fff);
@@ -536,7 +543,7 @@
 	}
 	
 	.ui-btn-down-d a.ui-link-inherit{
-	color:#111
+	color:#4F6661
 	}
 	
 	.ui-btn-up-d,.ui-btn-hover-d,.ui-btn-down-d{
@@ -566,20 +573,20 @@
 	}
 	
 	.ui-bar-e .ui-link{
-	color:#2489ce;
+	color:#fff;
 	font-weight:bold
 	}
 	
 	.ui-bar-e .ui-link:hover{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-bar-e .ui-link:active{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-bar-e .ui-link:visited{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-body-e,.ui-dialog.ui-overlay-e{
@@ -604,20 +611,20 @@
 	}
 	
 	.ui-body-e .ui-link{
-	color:#2489ce;
+	color:#fff;
 	font-weight:bold
 	}
 	
 	.ui-body-e .ui-link:hover{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-body-e .ui-link:active{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-body-e .ui-link:visited{
-	color:#2489ce
+	color:#fff
 	}
 	
 	.ui-btn-up-e{
@@ -642,7 +649,7 @@
 	border:1px solid #e79952;
 	background:#fbe26f;
 	font-weight:bold;
-	color:#111;
+	color:#4F6661;
 	text-shadow:0 1px 1px #fff;
 	background-image:-webkit-gradient(linear,left top,left bottom,from(#fcf0b5),to(#fbe26f));
 	background-image:-webkit-linear-gradient(#fcf0b5,#fbe26f);
@@ -660,7 +667,7 @@
 	border:1px solid #f7c942;
 	background:#fceda7;
 	font-weight:bold;
-	color:#111;
+	color:#4F6661;
 	text-shadow:0 1px 1px #fff;
 	background-image:-webkit-gradient(linear,left top,left bottom,from(#fadb4e),to(#fceda7));
 	background-image:-webkit-linear-gradient(#fadb4e,#fceda7);

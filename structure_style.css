@@ -179,10 +179,11 @@
 	}
 	
 	.ui-content{
-	border-width:0;
-	overflow:visible;
-	overflow-x:hidden;
-	padding:15px
+	border-width: 0;
+	overflow: visible;
+	overflow-x: hidden;
+	padding: 15px;
+	background-image: url(images/back.jpg);
 	}
 	
 	.ui-page-fullscreen .ui-content{
@@ -1523,7 +1524,7 @@
 	}
 	
 	.ui-li-has-arrow .ui-btn-inner a.ui-link-inherit,.ui-li-static.ui-li-has-arrow{
-	padding-right:30px
+	padding-right: 30px;
 	}
 	
 	.ui-li-has-arrow.ui-li-has-count .ui-btn-inner a.ui-link-inherit,.ui-li-static.ui-li-has-arrow.ui-li-has-count{
