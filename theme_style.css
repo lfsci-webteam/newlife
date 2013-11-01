@@ -340,7 +340,7 @@
 	}
 	
 	.ui-body-c .ui-link:hover{
-	color:#fff;
+	color:#c0c0c0;
 	}
 	
 	.ui-body-c .ui-link:active{
@@ -353,7 +353,7 @@
 	
 	.ui-btn-up-c{
 	border:1px solid #ccc;
-	background:#4F6661;
+	background:#fff;
 	font-weight:bold;
 	color:#444;
 	text-shadow:0 1px 1px #f6f6f6;
