@@ -6,10 +6,10 @@
         id        = "com.phonegap.newlife"
         version   = "1.0.0">
 
-    <name>New Life</name>
+    <name>Work Party</name>
 
     <description>
-    Some decisions are just very hard to take by yourself, that's where New Life comes in very handy.
+    	Laser Tag, Smash Brothers, Movie? Chinese, Mexican, Pizza? Some decisions are to hard to make in a group, let this app decide how to celebrate the next work party!
     </description>
 
     <author href="http://daily-lovejuice.net" email="sara@daily-lovejuice.net">
@@ -30,7 +30,7 @@
     <preference name="permissions"                value="none"/>
 
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="2.9.0" />          <!-- all: current version of PhoneGap -->
+    <preference name="phonegap-version"           value="3.7.0" />          <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="false" />          <!-- all: hides the status bar at the top of the screen -->
