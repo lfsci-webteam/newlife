@@ -145,8 +145,12 @@
 	display:block
 	}
 	
-	.ui-page .ui-header,.ui-page .ui-footer{
-	position:relative
+	.ui-page .ui-header{
+	position:relative;
+	}
+	.ui-page .ui-footer{
+	bottom: 0px;
+	position:absolute;
 	}
 	
 	.ui-header .ui-btn-left{
@@ -183,7 +187,6 @@
 	overflow: visible;
 	overflow-x: hidden;
 	padding: 15px;
-	background-image: url(images/back.jpg);
 	}
 	
 	.ui-page-fullscreen .ui-content{
@@ -674,6 +677,7 @@
 	border-left-width:0;
 	border-right-width:0
 	}
+	
 	
 	.ui-header-fixed,.ui-footer-fixed{
 	z-index:1000;

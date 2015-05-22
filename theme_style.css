@@ -1,17 +1,18 @@
 
-
 	.ui-bar-a{
-	border:1px solid #2a2a2a;
 	background:#4F6661;
-	color:#fff;
+	color:floralwhite;
 	font-weight:bold;
-	text-shadow:0 -1px 1px #000;
-	background-image:-webkit-gradient(linear,left top,left bottom,from(#A9BAB7),to(#4F6661));
-	background-image:-webkit-linear-gradient(#A9BAB7,#4F6661);
-	background-image:-moz-linear-gradient(#A9BAB7,#4F6661);
-	background-image:-ms-linear-gradient(#A9BAB7,#4F6661);
-	background-image:-o-linear-gradient(#A9BAB7,#4F6661);
-	background-image:linear-gradient(#A9BAB7,#4F6661)
+	text-shadow:none;
+	background:-webkit-linear-gradient(#808080,#A0A0A0);
+	background-image:-moz-linear-gradient(#808080,#A0A0A0);
+	background-image:-ms-linear-gradient(#808080,#A0A0A0);
+	background-image:linear-gradient(#A0A0A0,#808080)
+	}
+	
+	.ui-footer.ui-bar-a{
+	background:#282828;
+	background-image:none;
 	}
 
 	.ui-bar-a,.ui-bar-a input,.ui-bar-a select,.ui-bar-a textarea,.ui-bar-a button{
@@ -24,7 +25,8 @@
 
 	.ui-bar-a .ui-link{
 	color:#fff;
-	font-weight:bold
+	font-weight:bold;
+	text-decoration: none;
 	}
 	
 	.ui-bar-a .ui-link:hover{
@@ -46,11 +48,11 @@
 	text-shadow:0 1px 0 #000;
 	font-weight:normal;
 	background-image:-webkit-gradient(linear,left top,left bottom,from(#D4C1C4),to(#968488));
-	background-image:-webkit-linear-gradient(#D4C1C4,#968488);
-	background-image:-moz-linear-gradient(#D4C1C4,#968488);
-	background-image:-ms-linear-gradient(#D4C1C4,#968488);
-	background-image:-o-linear-gradient(#D4C1C4,#968488);
-	background-image:linear-gradient(#D4C1C4,#968488)
+	background-image:-webkit-linear-gradient(#808080,#202020);
+	background-image:-moz-linear-gradient(#808080,#202020);
+	background-image:-ms-linear-gradient(#808080,#202020);
+	background-image:-o-linear-gradient(#808080,#202020);
+	background-image:linear-gradient(#808080,#202020)
 	}
 	
 	.ui-body-a,.ui-body-a input,.ui-body-a select,.ui-body-a textarea,.ui-body-a button{
@@ -183,11 +185,11 @@
 	text-shadow:0 1px 0 #fff;
 	font-weight:normal;
 	background-image:-webkit-gradient(linear,left top,left bottom,from(#e6e6e6),to(#ccc));
-	background-image:-webkit-linear-gradient(#e6e6e6,#ccc);
-	background-image:-moz-linear-gradient(#e6e6e6,#ccc);
-	background-image:-ms-linear-gradient(#e6e6e6,#ccc);
-	background-image:-o-linear-gradient(#e6e6e6,#ccc);
-	background-image:linear-gradient(#e6e6e6,#ccc)
+	background-image:-webkit-linear-gradient(#808080,#202020);
+	background-image:-moz-linear-gradient(#808080,#202020);
+	background-image:-ms-linear-gradient(#808080,#202020);
+	background-image:-o-linear-gradient(#808080,#202020);
+	background-image:linear-gradient(#808080,#202020)
 	}
 	
 	.ui-body-b,.ui-body-b input,.ui-body-b select,.ui-body-b textarea,.ui-body-b button{
@@ -281,11 +283,11 @@
 	font-weight:bold;
 	text-shadow:0 1px 1px #fff;
 	background-image:-webkit-gradient(linear,left top,left bottom,from(#f0f0f0),to(#e9eaeb));
-	background-image:-webkit-linear-gradient(#f0f0f0,#e9eaeb);
-	background-image:-moz-linear-gradient(#f0f0f0,#e9eaeb);
-	background-image:-ms-linear-gradient(#f0f0f0,#e9eaeb);
-	background-image:-o-linear-gradient(#f0f0f0,#e9eaeb);
-	background-image:linear-gradient(#f0f0f0,#e9eaeb)
+	background-image:-webkit-linear-gradient(#808080,#202020);
+	background-image:-moz-linear-gradient(#808080,#202020);
+	background-image:-ms-linear-gradient(#808080,#202020);
+	background-image:-o-linear-gradient(#808080,#202020);
+	background-image:linear-gradient(#808080,#202020)
 	}
 	
 	.ui-bar-c .ui-link-inherit{
@@ -314,16 +316,15 @@
 	}
 	
 	.ui-body-c,.ui-dialog.ui-overlay-c{
-	border:1px solid #b3b3b3;
-	color:#333;
-	text-shadow:0 1px 0 #fff;
-	background:#f0f0f0;
-	background-image:-webkit-gradient(linear,left top,left bottom,from(#eee),to(#ddd));
-	background-image:-webkit-linear-gradient(#eee,#ddd);
-	background-image:-moz-linear-gradient(#eee,#ddd);
-	background-image:-ms-linear-gradient(#eee,#ddd);
-	background-image:-o-linear-gradient(#eee,#ddd);
-	background-image:linear-gradient(#eee,#ddd)
+	color:#f1f1f1;
+	text-shadow:0 1px 0 #101010;
+	background:#000;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#eee),to(#000));
+	background-image:-webkit-linear-gradient(#808080,#202020);
+	background-image:-moz-linear-gradient(#808080,#202020);
+	background-image:-ms-linear-gradient(#808080,#202020);
+	background-image:-o-linear-gradient(#808080,#202020);
+	background-image:linear-gradient(#808080,#202020)
 	}
 	
 	.ui-body-c,.ui-body-c input,.ui-body-c select,.ui-body-c textarea,.ui-body-c button{
@@ -335,8 +336,8 @@
 	}
 	
 	.ui-body-c .ui-link{
-	color:#fff;
-	font-weight:bold
+	color: skyblue;
+	text-decoration: none;
 	}
 	
 	.ui-body-c .ui-link:hover{
@@ -420,12 +421,12 @@
 	background:#bbb;
 	color:#333;
 	text-shadow:0 1px 0 #eee;
-	background-image:-webkit-gradient(linear,left top,left bottom,from(#ddd),to(#bbb));
-	background-image:-webkit-linear-gradient(#ddd,#bbb);
-	background-image:-moz-linear-gradient(#ddd,#bbb);
-	background-image:-ms-linear-gradient(#ddd,#bbb);
-	background-image:-o-linear-gradient(#ddd,#bbb);
-	background-image:linear-gradient(#ddd,#bbb)
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#000),to(#bbb));
+	background-image:-webkit-linear-gradient(#000,#bbb);
+	background-image:-moz-linear-gradient(#000,#bbb);
+	background-image:-ms-linear-gradient(#000,#bbb);
+	background-image:-o-linear-gradient(#000,#bbb);
+	background-image:linear-gradient(#000,#bbb)
 	}
 	
 	.ui-bar-d,.ui-bar-d input,.ui-bar-d select,.ui-bar-d textarea,.ui-bar-d button{
@@ -817,7 +818,9 @@
 	background:rgba(255,255,255,.3);
 	background-image:url(images/icons-18-black.png);
 	background-repeat:no-repeat
-	}@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi){
+	}
+	
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi){
 	.ui-icon-plus,.ui-icon-minus,.ui-icon-delete,.ui-icon-arrow-r,.ui-icon-arrow-l,.ui-icon-arrow-u,.ui-icon-arrow-d,.ui-icon-check,.ui-icon-gear,.ui-icon-refresh,.ui-icon-forward,.ui-icon-back,.ui-icon-grid,.ui-icon-star,.ui-icon-alert,.ui-icon-info,.ui-icon-home,.ui-icon-search,.ui-icon-searchfield:after,.ui-icon-checkbox-off,.ui-icon-checkbox-on,.ui-icon-radio-off,.ui-icon-radio-on{
 	background-image:url(images/icons-36-white.png);
 	-moz-background-size:776px 18px;
@@ -1067,7 +1070,6 @@
 	
 	.ui-mobile-nosupport-boxshadow
 	
-	 .ui-focus{
-outline-width:2px
-	
-}
+	.ui-focus{
+	outline-width:2px
+	}
